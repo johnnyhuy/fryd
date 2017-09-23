@@ -1,0 +1,22 @@
+{
+  "name": "fryd",
+  "version": "1.0.0",
+  "description": "Fryd ScrollMagic infographic",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnyhuy/fryd.git"
+  },
+  "author": "johnnyhuy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnnyhuy/fryd/issues"
+  },
+  "homepage": "https://github.com/johnnyhuy/fryd#readme",
+  "dependencies": {
+    "scrollmagic": "^2.0.5"
+  }
+}
