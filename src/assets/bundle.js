@@ -12778,7 +12778,7 @@ $(document).ready(() => {
     // Chicken animations
     var chickenTween = new TimelineMax().to(".farm__cloud_right", 1, { right: 300 }).to(".farm__cloud_left", 1, { left: 300 }, 0).to(".chicken__eye", 1, { top: 60 });
     var sadChickenTween = new TimelineMax().to(".chicken__eye", 1, { top: 20, left: 70 });
-    var normChickenTween = new TimelineMax().to(".chicken__eye", 1, { top: 100, left: 58 });
+    var normChickenTween = new TimelineMax().to(".chicken__eye", 1, { top: 100, left: 58 }).to(".machine__dial", 1, { rotation: 45 });
 
     new __WEBPACK_IMPORTED_MODULE_0_scrollmagic___default.a.Scene({ triggerElement: ".chicken__trigger", duration: 300 }).setTween(chickenTween).setPin(".chicken__image").addTo(controller);
     new __WEBPACK_IMPORTED_MODULE_0_scrollmagic___default.a.Scene({ triggerElement: ".chicken__trigger", duration: 550, offset: 400 }).setTween(sadChickenTween).setPin(".chicken__image").addTo(controller);

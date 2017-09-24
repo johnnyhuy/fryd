@@ -248,6 +248,15 @@ p {
     padding-top: 8rem;
     position: relative;
 
+    &__dial {
+        bottom: 18.5rem;
+        height: 8rem;
+        left: 21rem;
+        position: absolute;
+        transform: rotate(-45deg);
+        transform-origin: bottom;
+    }
+
     &__image {
         display: block;
         margin: 0 auto;

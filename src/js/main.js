@@ -13,7 +13,8 @@ $(document).ready(() => {
     var sadChickenTween = new TimelineMax()
         .to(".chicken__eye", 1, {top: 20, left: 70});
     var normChickenTween = new TimelineMax()
-        .to(".chicken__eye", 1, {top: 100, left: 58});
+        .to(".chicken__eye", 1, {top: 100, left: 58})
+        .to(".machine__dial", 1, {rotation: 45});
     
     new ScrollMagic.Scene({triggerElement: ".chicken__trigger", duration: 300})
         .setTween(chickenTween)
