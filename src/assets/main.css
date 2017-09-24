@@ -1,2 +1,204 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  font-weight: bold;
+  src: url("./1e99b0442583593743adb5d91d7c0669.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url("./9042a37caa7fb0389371de54dd886b38.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-weight: 300;
+  src: url("./30dc35833a8ab3b835403faee927c674.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-weight: 200;
+  src: url("./b5c9e279edbebf333edcabba7f36f065.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-weight: 100;
+  src: url("./298c4b7281c85c644a20850af7df6056.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(./d7d5d4588a9f50c99264bc12e4892a7c.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  src: url(./e1c83f9474e0cc1d84a13c6d1ddf3ca5.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  src: url(./f5331cb6372b6c0d8baf2dd7e200498c.ttf) format("truetype"); }
+
+:root {
+  font-size: 62.5%; }
+
 body {
-  background: white; }
+  background: #fff;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bebas Neue'; }
+
+p {
+  font-family: 'Open Sans'; }
+
+.header {
+  margin-bottom: 4rem;
+  margin-top: 4rem; }
+  .header__image {
+    display: block;
+    margin: 0 auto;
+    width: 350px; }
+
+.caption {
+  padding-bottom: 3rem;
+  padding-top: 4rem;
+  position: relative;
+  z-index: 1000; }
+  .caption__heading {
+    font-size: 3.4rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    text-align: center;
+    z-index: 1000; }
+  .caption__para {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    max-width: 450px;
+    position: relative;
+    text-align: center;
+    z-index: 1000; }
+
+.intro {
+  background-color: #eb423a;
+  color: #fff; }
+
+.cage {
+  background-color: #9d9d9d;
+  padding-top: 8rem;
+  position: relative; }
+  .cage__caption {
+    color: #fff; }
+  .cage__image {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+    z-index: 3000; }
+  .cage__floor {
+    background-color: #626363;
+    bottom: 0;
+    height: 270px;
+    left: auto;
+    position: absolute;
+    right: auto;
+    width: 100%;
+    z-index: 1; }
+
+.chicken {
+  display: block;
+  padding-top: 4rem;
+  position: absolute;
+  width: 100%;
+  z-index: 2000; }
+  .chicken__image {
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    z-index: 1000; }
+  .chicken-box {
+    position: absolute;
+    top: -20rem;
+    width: 100%; }
+    .chicken-box__image {
+      display: block;
+      margin: 0 auto;
+      width: 30rem; }
+
+.farm {
+  background-color: #90d6ee;
+  padding-top: 60rem;
+  position: relative; }
+  .farm__cloud {
+    height: 40px;
+    position: absolute;
+    top: 80px; }
+    .farm__cloud_left {
+      left: 240px; }
+    .farm__cloud_right {
+      right: 240px; }
+  .farm__grass {
+    background-color: #79c06d;
+    bottom: 0;
+    height: 270px;
+    left: auto;
+    position: absolute;
+    right: auto;
+    width: 100%;
+    z-index: 1; }
+  .farm__heading {
+    margin-top: 4rem; }
+  .farm__sun {
+    height: 110px;
+    left: 140px;
+    position: absolute;
+    top: -110px; }
+  .farm__shed {
+    height: 140px;
+    position: absolute;
+    right: 140px;
+    top: -140px; }
+
+.machine {
+  background-color: #626363;
+  padding-top: 8rem;
+  position: relative; }
+  .machine__image {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 440px;
+    z-index: 3000; }
+
+.road {
+  background-color: #dad9d8;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NzguMzQgMTE1NC45NiI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6IzE0MTQxNDt9LmJ7ZmlsbDojZmYwO308L3N0eWxlPjwvZGVmcz48dGl0bGU+aW1hZ2U8L3RpdGxlPjxyZWN0IGNsYXNzPSJhIiB3aWR0aD0iOTc4LjM0IiBoZWlnaHQ9IjExNTQuOTYiLz48cmVjdCBjbGFzcz0iYiIgeD0iNDUwLjA0IiB3aWR0aD0iMTkuMDEiIGhlaWdodD0iMTE1NC45NiIvPjxyZWN0IGNsYXNzPSJiIiB4PSI0OTkuNzIiIHdpZHRoPSIxOS4wMSIgaGVpZ2h0PSIxMTU0Ljk2Ii8+PC9zdmc+);
+  background-position-x: center;
+  background-repeat: repeat-y;
+  background-size: 50rem;
+  height: 200rem;
+  position: relative; }
+  .road__caption {
+    background-color: #fff;
+    bottom: 40rem;
+    position: absolute;
+    width: 100%; }
+
+.truck {
+  display: block;
+  position: absolute;
+  top: 20rem;
+  width: 100%;
+  z-index: 1000; }
+  .truck__image {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    width: 440px;
+    z-index: 1000; }

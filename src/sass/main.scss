@@ -1,3 +1,233 @@
+@import 'fonts';
+
+$white:         #fff;
+$sky:           #90d6ee;
+$grass:         #79c06d;
+$sun:           #e8d948;
+$road:          #151515;
+$brand:         #eb423a;
+$brand-light:   #ea7a78;
+$gray:          #9d9d9d;
+$gray-light:    #dad9d8;
+$gray-dark:     #626363;
+
+$shed-height:       140px;
+$sun-height:        110px;
+
+:root {
+    font-size: 62.5%;
+}
+
 body {
-    background: white;
+    background: $white;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue';
+}
+
+p {
+    font-family: 'Open Sans';
+}
+
+.header {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        width: 350px;
+    }
+}
+
+.caption {
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+    position: relative;
+    z-index: 1000;
+
+    &__heading {
+        font-size: 3.4rem;
+        margin-bottom: 0;
+        margin-top: 0;
+        position: relative;
+        text-align: center;
+        z-index: 1000;
+    }
+
+    &__para {
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        margin-top: 0;
+        max-width: 450px;
+        position: relative;
+        text-align: center;
+        z-index: 1000;
+    }
+}
+
+.intro {
+    background-color: $brand;
+    color: $white;
+}
+
+.cage {
+    background-color: $gray;
+    padding-top: 8rem;
+    position: relative;
+
+    &__caption {
+        color: $white;
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 300px;
+        z-index: 3000;
+    }
+
+    &__floor {
+        background-color: $gray-dark;
+        bottom: 0;
+        height: 270px;
+        left: auto;
+        position: absolute;
+        right: auto;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.chicken {
+    display: block;
+    padding-top: 4rem;
+    position: absolute;
+    width: 100%;
+    z-index: 2000;
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        z-index: 1000;
+    }
+
+    &-box {
+        position: absolute;
+        top: -20rem;
+        width: 100%;
+
+        &__image {
+            display: block;
+            margin: 0 auto;
+            width: 30rem;
+        }
+    }
+}
+
+.farm {
+    background-color: $sky;
+    padding-top: 60rem;
+    position: relative;
+
+    &__cloud {
+        height: 40px;
+        position: absolute;
+        top: 80px;
+
+        &_left {
+            left: 240px;
+        }
+
+        &_right {
+            right: 240px;
+        }
+    }
+
+    &__grass {
+        background-color: $grass;
+        bottom: 0;
+        height: 270px;
+        left: auto;
+        position: absolute;
+        right: auto;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__heading {
+        margin-top: 4rem;
+    }
+
+    &__sun {
+        height: $sun-height;
+        left: 140px;
+        position: absolute;
+        top: -$sun-height;
+    }
+
+    &__shed {
+        height: $shed-height;
+        position: absolute;
+        right: 140px;
+        top: -$shed-height;
+    }
+}
+
+.machine {
+    background-color: $gray-dark;
+    padding-top: 8rem;
+    position: relative;
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 440px;
+        z-index: 3000;
+    }
+}
+
+.road {
+    background-color: $gray-light;
+    background-image: url('../assets/images/road_2.svg');
+    background-position-x: center;
+    background-repeat: repeat-y;
+    background-size: 50rem;
+    height: 200rem;
+    position: relative;
+
+    &__caption {
+        background-color: $white;
+        bottom: 40rem;
+        position: absolute;
+        width: 100%;
+    }
+}
+
+.truck {
+    display: block;
+    position: absolute;
+    top: 20rem;
+    width: 100%;
+    z-index: 1000;
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 440px;
+        z-index: 1000;
+    }
 }
