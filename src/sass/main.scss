@@ -5,6 +5,8 @@ $sky:           #90d6ee;
 $grass:         #79c06d;
 $sun:           #e8d948;
 $road:          #151515;
+$table:         #fbbf8a;
+
 $brand:         #eb423a;
 $brand-light:   #ea7a78;
 $gray:          #9d9d9d;
@@ -46,6 +48,27 @@ p {
         display: block;
         margin: 0 auto;
         width: 350px;
+    }
+}
+
+.footer {
+    background-color: $table;
+    padding-bottom: 1rem;
+    padding-top: 20rem;
+
+    &__logo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: .5rem;
+        width: 10rem;
+    }
+
+    &__para {
+        color: $white;
+        font-size: 1.4rem;
+        margin-bottom: .2rem;
+        margin-top: 0;
+        text-align: center;
     }
 }
 
@@ -116,6 +139,13 @@ p {
     width: 100%;
     z-index: 2000;
 
+    &__eye {
+        left: 5.8rem;
+        position: absolute;
+        top: 10rem;
+        width: 5rem;
+    }
+
     &__image {
         display: block;
         margin: 0 auto;
@@ -134,11 +164,39 @@ p {
             width: 30rem;
         }
     }
+
+    &-cooked {
+        position: absolute;
+        top: 5rem;
+        width: 100%;
+        z-index: 2000;
+
+        &__image {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            width: 60rem;
+        }
+    }
+}
+
+.smell {
+    position: absolute;
+    top: 8rem;
+    width: 100%;
+    z-index: 2000;
+
+    &__image {
+        display: block;
+        margin: 0 auto;
+        opacity: 0;
+        width: 20rem;
+    }
 }
 
 .farm {
     background-color: $sky;
-    padding-top: 60rem;
+    padding-top: 77.5rem;
     position: relative;
 
     &__cloud {
@@ -155,11 +213,11 @@ p {
         }
     }
 
-    &__grass {
+    &__caption {
         background-color: $grass;
         bottom: 0;
-        height: 270px;
         left: auto;
+        padding-top: 15rem;
         position: absolute;
         right: auto;
         width: 100%;
@@ -197,6 +255,22 @@ p {
         width: 440px;
         z-index: 3000;
     }
+}
+
+.meal {
+    background-color: $sky;
+    padding-top: 60rem;
+    position: relative;
+
+    &__caption {
+        background-color: $table;
+        padding-top: 12rem;
+    }
+}
+
+.on-time {
+    background-color: $gray-dark;
+    color: $white;
 }
 
 .road {

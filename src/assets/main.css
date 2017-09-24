@@ -64,6 +64,22 @@ p {
     margin: 0 auto;
     width: 350px; }
 
+.footer {
+  background-color: #fbbf8a;
+  padding-bottom: 1rem;
+  padding-top: 20rem; }
+  .footer__logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    width: 10rem; }
+  .footer__para {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: .2rem;
+    margin-top: 0;
+    text-align: center; }
+
 .caption {
   padding-bottom: 3rem;
   padding-top: 4rem;
@@ -117,6 +133,11 @@ p {
   position: absolute;
   width: 100%;
   z-index: 2000; }
+  .chicken__eye {
+    left: 5.8rem;
+    position: absolute;
+    top: 10rem;
+    width: 5rem; }
   .chicken__image {
     display: block;
     margin: 0 auto;
@@ -130,10 +151,31 @@ p {
       display: block;
       margin: 0 auto;
       width: 30rem; }
+  .chicken-cooked {
+    position: absolute;
+    top: 5rem;
+    width: 100%;
+    z-index: 2000; }
+    .chicken-cooked__image {
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      width: 60rem; }
+
+.smell {
+  position: absolute;
+  top: 8rem;
+  width: 100%;
+  z-index: 2000; }
+  .smell__image {
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    width: 20rem; }
 
 .farm {
   background-color: #90d6ee;
-  padding-top: 60rem;
+  padding-top: 77.5rem;
   position: relative; }
   .farm__cloud {
     height: 40px;
@@ -143,11 +185,11 @@ p {
       left: 240px; }
     .farm__cloud_right {
       right: 240px; }
-  .farm__grass {
+  .farm__caption {
     background-color: #79c06d;
     bottom: 0;
-    height: 270px;
     left: auto;
+    padding-top: 15rem;
     position: absolute;
     right: auto;
     width: 100%;
@@ -175,6 +217,18 @@ p {
     position: relative;
     width: 440px;
     z-index: 3000; }
+
+.meal {
+  background-color: #90d6ee;
+  padding-top: 60rem;
+  position: relative; }
+  .meal__caption {
+    background-color: #fbbf8a;
+    padding-top: 12rem; }
+
+.on-time {
+  background-color: #626363;
+  color: #fff; }
 
 .road {
   background-color: #dad9d8;
