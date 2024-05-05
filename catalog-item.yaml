@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: fryd
+  title: Fryd
+  description: A simple website for Fryd a visual communication project from high-school
+spec:
+  type: website
+  lifecycle: production
+  owner: johnnyhuy
